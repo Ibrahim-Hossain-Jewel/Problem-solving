@@ -6,3 +6,4 @@ function reverse(str){
     return reversed;
 }
 console.log(reverse("Hello"));
+//How to rename of a branch => First switch to the branch name and then git branch -m newBranchName
