@@ -3,10 +3,8 @@
 //in JavaScript dose not need to pass as argument to compare each other.
 
 function palindrome(str){
-    str.split("").every((char,index)=>{
-        if(char === str[str.length - index -1]){
-            console.log("Palindrome");
-        }
-    })
+    return str.split("").every((char,index)=>{
+        return char === str[str.length - index -1];
+    });
 }
-palindrome("HeleH");
+console.log(palindrome("HeleH"));
