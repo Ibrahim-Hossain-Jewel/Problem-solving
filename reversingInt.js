@@ -4,9 +4,7 @@
 
 function reversingInt (num){
     const reversed = parseInt(num.toString().split("").reverse().join(""));
-    if(num<0){
-        return reversed * -1;
-    }
-    return reversed;
+    return reversed * Math.sign(num);
 }
+
 console.log(reversingInt(-500))
