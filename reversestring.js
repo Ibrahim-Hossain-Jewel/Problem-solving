@@ -7,7 +7,7 @@ function reverse(str){
     }
     return reversed;
 }
-reverse("Hello");
+console.log(reverse("Hello"));
 //How to rename of a branch => First switch to the branch name and then git branch -m newBranchName
 
 //return str.split("").reduce((reversed, character)=> character + reversed,"m");
