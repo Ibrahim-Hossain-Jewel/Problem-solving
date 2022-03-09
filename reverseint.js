@@ -1,7 +1,9 @@
 //Making reverse integer
 function reverseInt(n){
-    let reverse =  n.toString().split('').reverse().join('');
-    return parseInt(reverse) * Math.sign(n);
+    if(n<0){
+        var reverse = parseInt(n.toString().split('').reverse().join('')) * -1;
+    }
+    return reverse;
 }
 
-console.log(reverseInt(-1200));
+console.log(reverseInt(-12));
