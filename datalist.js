@@ -22,4 +22,7 @@ const orders = [
     }
 ];
 //now extract userid who has userId === 1 and calculate the whole amount up here;
-orders.filter(users => users.userId === 1).map(userData => console.log(userData.userName))
+//now calculate the all amount from the list;
+console.log(orders.filter(users => users.userId === 1).map(userData => userData.amount).reduce(
+    (accumulator, currentValue)=> accumulator += currentValues
+))
