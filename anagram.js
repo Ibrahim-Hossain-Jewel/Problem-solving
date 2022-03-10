@@ -31,7 +31,5 @@ function anagram(str1, str2){
     }else{
         return false;
     }
-
-
 }
 anagram('rail safety', 'fairy tales');
